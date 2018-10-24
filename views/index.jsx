@@ -11,7 +11,7 @@ const Page = () =>
     </head>
     <body>
       <Form />
-      <script src='./app.js' />
+      <script src='./data/rest' />
     </body>
   </html>
 
