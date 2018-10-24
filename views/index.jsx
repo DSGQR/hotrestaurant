@@ -27,12 +27,12 @@ const Page = () => {
                 <br/>
 
                   <div className="text-center">
-                    <a href="./components/res-view.jsx">
+                    <a href="./components/res_view">
                       <button className="btn btn-lg btn-primary">
                         <span className="fa fa-list-alt"></span> View Tables
                       </button>
                     </a>
-                    <a href="./components/reservation.jsx">
+                    <a href="./components/reservation">
                       <button className="btn btn-lg btn-danger">
                         <span className="fa fa-credit-card"></span> Make Reservation
                       </button>
