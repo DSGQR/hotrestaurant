@@ -33,9 +33,9 @@ const getReservations = () => {
     // override default behavior
     event.preventDefault();
     // get data from screen 
-    let resName = document.querySelector('#reserve-name').value.trim();
-    let resPhone = document.querySelector('#reserve-phone').value.trim();
-    let resEmail = document.querySelector('#reserve-email').value.trim();
+    let resName = document.querySelector('#name').value.trim();
+    let resPhone = document.querySelector('#phone').value.trim();
+    let resEmail = document.querySelector('#email').value.trim();
   
     if (resName != '' || resPhone != '' || resEmail != "") {
       // Post the screen entries 
@@ -56,11 +56,11 @@ const getReservations = () => {
         })
       .catch(e => console.error(e));
       // Clear screen 
-      document.querySelector('#reserve-name').value = '';
-      document.querySelector('#reserve-phone').value = '';
-      document.querySelector('#reserve-email').value = '';
+      document.querySelector('#name').value = '';
+      document.querySelector('#phone').value = '';
+      document.querySelector('#email').value = '';
     } else {
-      console.log('Incompleta data in screen!')
+      console.log('Please complete each entry in the form to proceed')
     }
   
   
