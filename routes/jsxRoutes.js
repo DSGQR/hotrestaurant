@@ -10,13 +10,13 @@ var restaurant = function(app) {
         res.render("/components/res_view")
     })
 
-    app.get("/reservation", (req,res) => {
-        res.render("/components/reservation")
-    })
+  app.get("/components/reservation", (req, res) => {
+    res.render("components/reservation", {tables: reserve, waitlist: wait})
+  })
 
-    app.get("/form", (req,res) => {
-        res.render("/components/form")
-    })    
+  app.get("/components/res_view", (req, res) => {
+    res.render("components/res_view")
+  })
 
     app.get("/curr_res", (req,res) => {
         res.render("/components/curr_res")

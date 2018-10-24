@@ -1,6 +1,5 @@
 const React = require('react');
 const Fragment = React.Fragment
-const Form = require('./components/form')
 
 const ResList = () => {
     return(
@@ -75,3 +74,5 @@ const ResList = () => {
         </Fragment>    
     )
 }
+
+module.exports = ResList;
