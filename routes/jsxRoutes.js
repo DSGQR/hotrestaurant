@@ -1,19 +1,20 @@
-const fetch = window.fetch
+var reserve = require("../data/tables")
+var wait = require("../data/waitlist")
 
-document.querySelector('#addUser').addEventListener('click', event => {
-  event.preventDefault()
-  fetch('/users', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json; charset=utf-8' },
-    body: JSON.stringify({
-      name: document.querySelector('#name').value,
-      phonenumber: document.querySelector('#phoneNumber').value,
-      email: document.querySelector('#email').value,
-    })
+var restaurant = function (app) {
+
+  app.get("/", (req, res) => {
+    res.render("index")
   })
-    .then(r => { window.location = './users' })
-    .catch(e => console.error(e))
-  document.querySelector('#name').value = ''
-  document.querySelector('#phoneNumber').value = ''
-  document.querySelector('#email').value = ''
-})
+
+  app.get("/reservation", (req, res) => {
+    res.render("components/resrvation", {tables: reserve, waitlist: wait})
+  })
+
+  // app.get("/", (req, res) => {
+  //   res.render("index")
+  // })
+
+}
+
+module.exports = restaurant;

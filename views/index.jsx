@@ -10,8 +10,8 @@ const Page = () =>
       <link href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO' crossOrigin='anonymous' />
     </head>
     <body>
-      <Form />
-      <script src='./app.js' />
+
+      <script src='../data/restaurant.js' />
     </body>
   </html>
 
