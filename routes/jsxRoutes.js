@@ -7,13 +7,13 @@ var restaurant = function (app) {
     res.render("index")
   })
 
-  app.get("/reservation", (req, res) => {
-    res.render("components/resrvation", {tables: reserve, waitlist: wait})
+  app.get("/components/reservation", (req, res) => {
+    res.render("components/reservation", {tables: reserve, waitlist: wait})
   })
 
-  // app.get("/", (req, res) => {
-  //   res.render("index")
-  // })
+  app.get("/components/res_view", (req, res) => {
+    res.render("components/res_view")
+  })
 
 }
 
