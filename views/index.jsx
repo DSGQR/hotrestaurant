@@ -27,11 +27,7 @@ const Page = () => {
                 <br/>
 
                   <div className="text-center">
-<<<<<<< HEAD
-                    <a href="/res-view.jsx">
-=======
                     <a href="./components/res_view">
->>>>>>> d57da184895d1a834268c2c3ca3459b6d4d957ea
                       <button className="btn btn-lg btn-primary">
                         <span className="fa fa-list-alt"></span> View Tables
                       </button>
