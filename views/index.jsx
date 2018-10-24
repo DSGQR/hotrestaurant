@@ -1,6 +1,6 @@
 const React = require('react');
 const Fragment = React.Fragment
-const Form = require('./components/form')
+// const Form = require('./components/form')
 
 const Page = () => {
   return (
@@ -27,7 +27,7 @@ const Page = () => {
                 <br/>
 
                   <div className="text-center">
-                    <a href="./components/res-view.jsx">
+                    <a href="/res-view.jsx">
                       <button className="btn btn-lg btn-primary">
                         <span className="fa fa-list-alt"></span> View Tables
                       </button>

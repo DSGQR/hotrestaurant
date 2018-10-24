@@ -6,7 +6,7 @@ var restaurant = function(app) {
         res.render("index")
     })
 
-    app.get("/res_view", (req,res) => {
+    app.get("/res-view", (req,res) => {
         res.render("/components/res_view")
     })
 
