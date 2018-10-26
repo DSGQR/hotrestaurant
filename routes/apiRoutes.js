@@ -15,7 +15,6 @@ module.exports = function (app) {
   // })
 
   app.post('/setreservation', (req, res) => {
-    console.log(req.body);
     restaurant.createReservation(req.body)
     res.sendStatus(200)
   })
